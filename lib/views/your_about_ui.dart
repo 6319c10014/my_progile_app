@@ -12,7 +12,13 @@ class _YourAboutUIState extends State<YourAboutUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple[200],
+      appBar: AppBar(
+        backgroundColor: Colors.green[800],
+        title: Text(
+          'Add/Edit About',
+        ),
+        centerTitle: true,
+      ),
     );
   }
 }

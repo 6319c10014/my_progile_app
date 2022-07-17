@@ -12,7 +12,13 @@ class _YourNameUIState extends State<YourNameUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[200],
+      appBar: AppBar(
+        backgroundColor: Colors.green[800],
+        title: Text(
+          'Add/Edit Name',
+        ),
+        centerTitle: true,
+      ),
     );
   }
 }

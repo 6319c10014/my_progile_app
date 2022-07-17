@@ -12,7 +12,13 @@ class _YourEmailUIState extends State<YourEmailUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red[200],
+      appBar: AppBar(
+        backgroundColor: Colors.green[800],
+        title: Text(
+          'Add/Edit Email',
+        ),
+        centerTitle: true,
+      ),
     );
   }
 }

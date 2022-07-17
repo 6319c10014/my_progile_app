@@ -12,7 +12,13 @@ class _YpurPhoneUIState extends State<YpurPhoneUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow[200],
+      appBar: AppBar(
+        backgroundColor: Colors.green[800],
+        title: Text(
+          'Add/Edit Phone',
+        ),
+        centerTitle: true,
+      ),
     );
   }
 }
