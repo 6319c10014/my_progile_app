@@ -22,6 +22,14 @@ linter:
   # `// ignore_for_file: name_of_lint` syntax on the line or in the file
   # producing the lint.
   rules:
+    prefer_const_constructors: false
+    sort_child_properties_last: false
+    prefer_const_literals_to_create_immutables: false
+    prefer_interpolation_to_compose_strings: false
+    sized_box_for_whitespace: false
+    use_key_in_widget_constructors: false
+    must_be_immutable: false
+    unused_element: false
     # avoid_print: false  # Uncomment to disable the `avoid_print` rule
     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
 
