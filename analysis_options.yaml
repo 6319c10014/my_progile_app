@@ -30,6 +30,7 @@ linter:
     use_key_in_widget_constructors: false
     must_be_immutable: false
     unused_element: false
+    prefer_is_empty: false
     # avoid_print: false  # Uncomment to disable the `avoid_print` rule
     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
 
