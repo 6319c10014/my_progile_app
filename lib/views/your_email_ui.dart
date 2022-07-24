@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class YourEmailUI extends StatefulWidget {
   const YourEmailUI({Key? key}) : super(key: key);
@@ -10,6 +11,11 @@ class YourEmailUI extends StatefulWidget {
 
 class _YourEmailUIState extends State<YourEmailUI> {
   TextEditingController emailCtrl = TextEditingController(text: '');
+  Future addYouremailToSF() async {
+    SharedPreferences prefer = await SharedPreferences.getInstance();
+    prefer.setString('youremail', emailCtrl.text);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,7 +99,11 @@ class _YourEmailUIState extends State<YourEmailUI> {
                       );
                     },
                   );
-                } else {}
+                } else {
+                  addYouremailToSF().then((value) {
+                    Navigator.pop(context);
+                  });
+                }
               },
               child: Text(
                 'บันทึก',
